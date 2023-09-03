@@ -1,0 +1,26 @@
+{
+    "panel" : {
+        "adminPanel" : "admin"
+    },
+    "header" : {
+        "title" : "RouterApp"
+    },
+    "navigation" : {
+        "home" : {
+            "label" : "home",
+            "link" : "/"
+        },
+        "about" : {
+            "label" : "about",
+            "link" : "/about"
+        },
+        "products" : {
+            "label" : "products",
+            "link" : "/products"
+        },
+        "contact" : {
+            "label" : "contact",
+            "link" : "/contact"
+        }
+    }
+}

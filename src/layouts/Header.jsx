@@ -7,7 +7,7 @@ export default function Header ({
 
     return (
         <header className='header'>
-            <h2>{title}</h2>
+            <h2 className="header__title">{title}</h2>
         </header>
     )
 }

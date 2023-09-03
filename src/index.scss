@@ -1,14 +1,17 @@
+@import "./styles/components/App.scss";
+
 body {
     width: 100vw;
     display: flex;
-    background-color: rgb(46, 46, 46);
+    background-color: $headerColor;
     display: flex;
     justify-content: center;
 
 }
 
 #root {
-    background-color: yellow;
+    // background-color: yellow;
     width: 100%;
-    max-width: 1280px;
+    max-width: $maxWidthForApp;
+    box-shadow: 0 0 20px rgb(163, 163, 163);
 }

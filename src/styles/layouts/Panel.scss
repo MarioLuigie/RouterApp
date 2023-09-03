@@ -1,0 +1,11 @@
+@import "../components/App.scss";
+
+.panel {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: $maxWidthForApp;
+    height: $headerTopMar;
+    background-color: $headerColor;
+    box-shadow: 0 5px 5px rgb(214, 214, 214);
+}

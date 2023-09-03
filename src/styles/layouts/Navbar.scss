@@ -1,0 +1,41 @@
+@import "../../styles/components/App.scss";
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // padding: 5px;
+    // background-color: red;
+    box-shadow: 0 -5px 5px rgb(223, 223, 223);
+}
+
+.navbarLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    list-style: none;
+
+    &__link > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $headerColor;
+        border-radius: 2px;
+        padding: 7px 0;
+        width: 100px;
+        box-shadow: 0 0 4px rgb(167, 167, 167);
+        color: rgb(139, 139, 139);
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(33, 206, 148);
+        }
+    }
+}
+
+a.active {
+    background-color: rgb(224, 224, 224);
+}
