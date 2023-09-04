@@ -11,13 +11,13 @@
     background: linear-gradient(to right, rgba(252, 197, 44, 0.815), rgba(235, 35, 128, 0.774));
     color: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.514);
-    // border: 1px solid rgba(255, 214, 80, 0.678);
     cursor: pointer;
     letter-spacing: 1px;
     font-weight: bold;
     transition: 
         transform 0.2s ease
     ;
+    // border: 1px solid rgba(255, 214, 80, 0.678);
 
     &:active {
         transform: scale(0.9);

@@ -7,11 +7,14 @@ export default function Navbar () {
     const { navigation } = textContent
 
     const menuLinks = Object.values(navigation).map((menuLink, i) => {
+
+        // console.log(menuLink.exact);
+        // console.log(typeof menuLink.exact);
         return (
             <NavbarLink 
                 key={i}
                 label={menuLink.label}
-                link={menuLink.link}
+                path={menuLink.path}
             />
         )
     })

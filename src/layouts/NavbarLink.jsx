@@ -4,17 +4,18 @@ import "../styles/layouts/Navbar.scss"
 
 export default function NavbarItem ({
     label,
-    link
+    path
 }) {
 
     return (
         <li className="navbarLinks__link">
-            <NavLink to={link}>{label}</NavLink>
+            <NavLink to={path} >{label}</NavLink>
         </li>
     )
 }
 
 NavbarItem.propTypes = {
     label : PropTypes.string.isRequired,
-    link : PropTypes.string.isRequired,
+    path : PropTypes.string.isRequired,
+    // exact : PropTypes.bool.isRequired,
 }

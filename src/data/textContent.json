@@ -1,4 +1,10 @@
-{
+{   
+    "socialLinks" : {
+        "facebook" : true,
+        "instagram" : true,
+        "youtube" : true,
+        "linkedin" : true
+    },
     "panel" : {
         "adminPanel" : "admin"
     },
@@ -11,23 +17,28 @@
     "navigation" : {
         "home" : {
             "label" : "home",
-            "link" : "/"
+            "path" : "/",
+            "exact" : true
         },
         "about" : {
             "label" : "about",
-            "link" : "/about"
+            "path" : "/about",
+            "exact" : false
         },
         "gallery" : {
             "label" : "gallery",
-            "link" : "/gallery"
+            "path" : "/gallery",
+            "exact" : false
         },
         "contact" : {
             "label" : "contact",
-            "link" : "/contact"
+            "path" : "/contact",
+            "exact" : false
         },
         "store" : {
             "label" : "store",
-            "link" : "/store"
+            "path" : "/store",
+            "exact" : false
         }
     },
     "footer" : {

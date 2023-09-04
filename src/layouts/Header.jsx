@@ -1,6 +1,7 @@
 import { useRef, useState } from "react"
 import PropTypes from 'prop-types'
 import Button from "../components/Button"
+import SocialLinks from "../components/SocialLinks"
 import danceVideo01 from "../assets/videos/dance01.mp4"
 import danceVideo02 from "../assets/videos/dance02.mp4"
 import '../styles/layouts/Header.scss'
@@ -54,6 +55,7 @@ export default function Header ({
             <h4 className="header__subtitle">{subtitle01}</h4>
             <h4 className="header__subtitle">{subtitle02}</h4>
             <Button label={button} />
+            <SocialLinks />
         </header>
     )
 }

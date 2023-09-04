@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Sans&family=Orbitron&family=Poppins:wght@200;400;700&display=swap');
-
-
 //CALCS
-$panelHeight : 60px;
+$panelHeight : 70px;
 $headerHeight : 370px;
 $maxWidthForApp : 1280px;
 $RouteHeight : 500px;
@@ -11,6 +8,7 @@ $RouteHeight : 500px;
 $headerColor : rgb(245, 245, 245);
 $activeNavLinkColor :  rgb(49, 49, 49);
 
+//RESET
 *,
 *::before,
 *::after {
@@ -23,7 +21,7 @@ $activeNavLinkColor :  rgb(49, 49, 49);
 
 .app {
   width: 100%;
+  font-family: "Poppins", "Roboto", "Arial", Sans-serif;
   // background-color: rgb(106, 253, 209);
-  font-family: "Poppins", serif;
 }
 

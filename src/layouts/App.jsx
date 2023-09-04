@@ -28,11 +28,11 @@ export default function App() {
         />
         <Navbar />
         <Routes>
-          <Route exact path={home.link} element={<Home />} />
-          <Route path={about.link} element={<About />} />
-          <Route path={gallery.link} element={<Gallery />} />
-          <Route path={store.link} element={<Store />} />
-          <Route path={contact.link} element={<Contact />} />
+          <Route exact path={home.path} element={<Home />} />
+          <Route path={about.path} element={<About />} />
+          <Route path={gallery.path} element={<Gallery />} />
+          <Route path={store.path} element={<Store />} />
+          <Route path={contact.path} element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer 
