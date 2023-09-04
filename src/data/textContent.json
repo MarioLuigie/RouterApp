@@ -3,7 +3,10 @@
         "adminPanel" : "admin"
     },
     "header" : {
-        "title" : "dance your live"
+        "title" : "Dance your live",
+        "subtitle01" : "Dance with passionate people",
+        "subtitle02" : "-Join us below-",
+        "button" : "Join us!"
     },
     "navigation" : {
         "home" : {
@@ -14,13 +17,21 @@
             "label" : "about",
             "link" : "/about"
         },
-        "products" : {
-            "label" : "products",
-            "link" : "/products"
+        "gallery" : {
+            "label" : "gallery",
+            "link" : "/gallery"
         },
         "contact" : {
             "label" : "contact",
             "link" : "/contact"
+        },
+        "store" : {
+            "label" : "store",
+            "link" : "/store"
         }
+    },
+    "footer" : {
+        "sign" : "ARWcode 2023 Powered by React Vite",
+        "link" : "Videos by mixkit.co"
     }
 }

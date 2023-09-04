@@ -1,0 +1,10 @@
+@import "../components/App.scss";
+
+.contact {
+    width: 100%;
+    height: $RouteHeight;
+    background-color: $headerColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

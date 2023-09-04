@@ -5,7 +5,8 @@
     top: 0;
     width: 100%;
     max-width: $maxWidthForApp;
-    height: $headerTopMar;
+    height: $panelHeight;
     background-color: $headerColor;
-    box-shadow: 0 5px 5px rgb(214, 214, 214);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.267);
+    z-index: 3;
 }
