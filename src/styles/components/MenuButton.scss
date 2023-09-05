@@ -24,28 +24,32 @@ $stripeColorToChange: $stripeColor;
   border-radius: $borderRadius;
   cursor: pointer;
 
-  &:hover {
+  // @media screen and (min-width: 600px) {
+  //   display: none;
+  // }
 
-    :nth-child(1) {
-      transform: rotate(45deg) ;
-      position: absolute;
-      left: 5%;
-      background-color: $stripeColorToChange;
-    }
+  // &:hover {
 
-    :nth-child(2) {
-      transform: scaleX(0);
-      opacity: 0;
-      background-color: $stripeColorToChange;
-    }
+  //   :nth-child(1) {
+  //     transform: rotate(45deg) ;
+  //     position: absolute;
+  //     left: 5%;
+  //     background-color: $stripeColorToChange;
+  //   }
 
-    :nth-child(3) {
-      transform: rotate(-45deg);
-      position: absolute;
-      left: 5%;
-      background-color: $stripeColorToChange;
-    }
-  }
+  //   :nth-child(2) {
+  //     transform: scaleX(0);
+  //     opacity: 0;
+  //     background-color: $stripeColorToChange;
+  //   }
+
+  //   :nth-child(3) {
+  //     transform: rotate(-45deg);
+  //     position: absolute;
+  //     left: 5%;
+  //     background-color: $stripeColorToChange;
+  //   }
+  // }
 }
 
 .child {
@@ -56,6 +60,28 @@ $stripeColorToChange: $stripeColor;
   transform: rotate(0deg);
   opacity: 1;
   transition: transform 0.3s, opacity 0.3s;
+}
+
+.isMenuBtnClicked {
+  :nth-child(1) {
+    transform: rotate(45deg) ;
+    position: absolute;
+    left: 5%;
+    background-color: $stripeColorToChange;
+  }
+
+  :nth-child(2) {
+    transform: scaleX(0);
+    opacity: 0;
+    background-color: $stripeColorToChange;
+  }
+
+  :nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 5%;
+    background-color: $stripeColorToChange;
+  }
 }
 
 

@@ -1,10 +1,13 @@
 import NavbarLink from "./NavbarLink"
 import textContent from "../data/textContent.json"
+import { useContext } from "react"
+import { Context } from "../Context/Context"
 import "../styles/layouts/Navbar.scss"
 
 export default function Navbar () {
 
     const { navigation } = textContent
+    const { isMenuBtnClicked } = useContext(Context)
 
     const menuLinks = Object.values(navigation).map((menuLink, i) => {
 
@@ -20,7 +23,12 @@ export default function Navbar () {
     })
 
     return (
-        <nav className="navbar">
+        <nav className={
+            `${isMenuBtnClicked 
+                ? " navbar visibility" 
+                : "navbar"}`
+            }
+        >
             <ul className="navbarLinks">
                 {menuLinks}
             </ul>

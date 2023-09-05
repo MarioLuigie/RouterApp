@@ -1,21 +1,41 @@
 @import "../../styles/components/App.scss";
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: none;
+    z-index: 3;
+    position: absolute;
+    top: $panelHeight;
+    right: 0;
+    // background-color: $headerColor;
+    background-color: rgba(245, 245, 245, 0.863);
+    backdrop-filter: blur(8px);
     width: 100%;
-    padding: 18px 0;
+    height: 0;
     border-bottom: 1px solid rgb(180, 180, 180);
-    // background-color: red;
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+
+    @media screen and (min-width: 600px) {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 18px 0;
+    }
 }
 
 .navbarLinks {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     list-style: none;
+
+    @media screen and (min-width: 600px) {
+        flex-direction: row;
+    }
 
     &__link > a {
         display: flex;
@@ -39,4 +59,10 @@
 a.active {
     background-color: $activeNavLinkColor;
     color: orange;
+}
+
+.visibility {
+    display: flex;
+    justify-content: center;
+    height: $headerHeight;
 }
