@@ -7,7 +7,7 @@ import "../styles/layouts/Navbar.scss"
 export default function Navbar () {
 
     const { navigation } = textContent
-    const { isMenuBtnClicked } = useContext(Context)
+    const { isMenuBtnClicked, isMobile } = useContext(Context)
 
     const menuLinks = Object.values(navigation).map((menuLink, i) => {
 
@@ -24,12 +24,20 @@ export default function Navbar () {
 
     return (
         <nav className={
-            `${isMenuBtnClicked 
-                ? " navbar visibility" 
+            `${isMenuBtnClicked && isMobile
+                ? " navbar visibilityNavbar" 
                 : "navbar"}`
             }
         >
-            <ul className="navbarLinks">
+            {/* <ul className="navbarLinks">
+                {menuLinks}
+            </ul> */}
+            <ul className={
+                `${!isMenuBtnClicked && isMobile
+                    ? "navbarLinks opacityNavbarLinks"
+                    : "navbarLinks"
+                }`
+            }>
                 {menuLinks}
             </ul>
         </nav>

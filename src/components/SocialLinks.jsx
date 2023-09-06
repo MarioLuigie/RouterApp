@@ -7,16 +7,16 @@ export default function SocialLinks () {
     return (
         <div className="socialLinks">
             <div className='socialLinks__link'>
-                <FontAwesomeIcon icon={faFacebookF} />
+                <a href="https://www.facebook.com/" target="blank"><FontAwesomeIcon icon={faFacebookF} /></a>
             </div>
             <div className='socialLinks__link'>
-                <FontAwesomeIcon icon={faInstagram} />      
+                <a href="https://www.instagram.com/" target="blank"><FontAwesomeIcon icon={faInstagram} /></a>  
             </div>
             <div className='socialLinks__link'>
-                <FontAwesomeIcon icon={faYoutube} />
+                <a href="https://www.youtube.com/" target="blank"><FontAwesomeIcon icon={faYoutube} /></a>
             </div>
             <div className='socialLinks__link'>
-                <FontAwesomeIcon icon={faLinkedinIn} />
+                <a href="https://www.linkedin.com/" target="blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
             </div>
         </div>
     )
