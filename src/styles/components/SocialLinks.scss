@@ -1,15 +1,21 @@
+@import "./App.scss";
+
 .socialLinks {
+    z-index: 4;
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 10px;
+    bottom: calc($headerHeight / 2);
+    transform: translateY(50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
 
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: $mobileRange) {
         flex-direction: row;
+        bottom: 20px;
+        transform: none;
     }
 
     &__link > a {

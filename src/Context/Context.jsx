@@ -6,7 +6,7 @@ export const Context = createContext();
 
 export default function Provider ({ children }) {
 
-    const isMobile = useMediaQuery({ maxWidth : 600 })
+    const isMobile = useMediaQuery({ maxWidth : 768 })
     const [isMenuBtnClicked, setIsMenuBtnClicked] = useState(false)
 
     const providerValue = {

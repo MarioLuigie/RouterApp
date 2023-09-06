@@ -8,13 +8,14 @@
     height: $panelHeight;
     background-color: $headerColor;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.267);
-    z-index: 3;
+    z-index: 4;
     color: rgb(133, 3, 3);
     display: flex;
     justify-content: center;
     align-items: center;
 
     &__logBtn {
+        z-index: 3;
         position: absolute;
         right: 25px;
         color: rgb(100, 100, 100);

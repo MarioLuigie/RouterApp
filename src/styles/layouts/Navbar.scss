@@ -15,7 +15,7 @@
     transition: height 0.15s ease-in-out;
     overflow: hidden;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $mobileRange) {
         position: static;
         display: flex;
         justify-content: center;
