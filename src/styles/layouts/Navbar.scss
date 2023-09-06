@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
     list-style: none;
     transition:
         opacity 0s ease-in-out
@@ -38,6 +38,7 @@
 
     @media screen and (min-width: $mobileRange) {
         flex-direction: row;
+        gap: 10px;
     }
 
     &__link > a {

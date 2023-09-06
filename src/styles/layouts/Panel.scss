@@ -31,5 +31,55 @@
             // transform: scale(1.2);
         }
     }
+
+    &__audio {
+        z-index: 1;
+        background-color: transparent;
+        width: 50%;
+        min-width: 200px;
+        max-width: 400px;
+        height: 16px;
+        // background-color: red;
+
+        /* Przesunięcie opcji audio na dół */
+        &::-webkit-media-controls-panel {
+            flex-direction: row-reverse;
+        }
+    
+        &::-webkit-media-controls-timeline {
+            order: 1;
+        }
+        
+        &::-webkit-media-controls-play-button {
+            order: 2;
+        }
+        
+        &::-webkit-media-controls-current-time-display {
+            order: 3;
+            display: none;
+        }
+        
+        &::-webkit-media-controls-time-remaining-display {
+            order: 4;
+            display: none;
+        }
+        
+        &::-webkit-media-controls-mute-button {
+            order: 5;
+        }
+        
+        &::-webkit-media-controls-volume-slider-container {
+            order: 6;
+        }
+        
+        &::-webkit-media-controls-volume-slider {
+            order: 7;
+        }
+        
+        &::-webkit-media-controls-fullscreen-button {
+            order: 8;
+            display: none;
+        }
+    }
 }
 
