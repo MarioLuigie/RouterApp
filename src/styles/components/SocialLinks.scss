@@ -1,6 +1,6 @@
 .socialLinks {
     position: absolute;
-    left: 30px;
+    left: 20px;
     bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -13,8 +13,8 @@
     }
 
     &__link > a {
-        font-size: 20px;
-        width: 35px;
+        font-size: 18px;
+        width: 33px;
         aspect-ratio: 1;
         background-color: rgba(255, 255, 255, 0.363);
         border-radius: 50%;

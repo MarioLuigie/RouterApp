@@ -7,7 +7,7 @@
     top: $panelHeight;
     right: 0;
     // background-color: $headerColor;
-    background-color: rgba(245, 245, 245, 0.863);
+    background-color: rgba(245, 245, 245, 0.808);
     backdrop-filter: blur(8px);
     width: 100%;
     height: 0;
@@ -36,7 +36,7 @@
         opacity 0s ease-in-out
     ;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $mobileRange) {
         flex-direction: row;
     }
 
@@ -49,7 +49,7 @@
         padding: 7px 0;
         width: 95px;
         box-shadow: 0 0 4px rgb(167, 167, 167);
-        color: rgb(139, 139, 139);
+        color: rgb(85, 85, 85);
         cursor: pointer;
         text-decoration: none;
 

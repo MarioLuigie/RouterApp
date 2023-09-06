@@ -8,7 +8,7 @@ export default function Footer ({
 
     return (
         <footer className="footer">
-            <div className="footer__sign">
+            <div className="footer__signWrapper">
                 <p>{sign}</p>
                 <p>
                     <a 
